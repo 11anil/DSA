@@ -1,7 +1,8 @@
 package Basics.Arrays;
-
+import java.util.*;
 public class Basics {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
         // // Syntax
         // datatype[] variable_name = new dataype[size];
@@ -29,5 +30,12 @@ public class Basics {
 
         // any ref variable that u have bydefault its going to be of null
 
+ 
+        String[] str = new String[4];
+        for(int i=0; i<str.length; i++){
+           str[i] = sc.next();
+        }
+       System.out.println(Arrays.toString(str));
+       sc.close();
     }
 }
