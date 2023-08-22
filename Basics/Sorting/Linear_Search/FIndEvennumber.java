@@ -27,12 +27,21 @@ public class FIndEvennumber {
         return false;
     }
 
+        static int digits2(int num) {
+
+        if (num < 0) {
+            num = num * -1;
+        }
+        return (int)(Math.log10(num)) + 1;
+    }
+
     // count num of digits in a number
     static int digits(int num) {
 
         if (num < 0) {
             num = num * -1;
         }
+       
         if (num == 0) {
             return 1;
         }
