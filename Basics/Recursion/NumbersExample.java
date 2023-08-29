@@ -14,3 +14,5 @@ public class NumbersExample {
         print(n + 1);
     }
 }
+
+//recursion means function calling itself
